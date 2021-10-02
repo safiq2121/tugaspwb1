@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Personal web site</title>
+        <STyle>
+            body{
+                background-image:url("background-36.jpg");
+                background-attachment: fixed;
+                background-size:100% 100%;  
+            }
+            a:link,a:visited {
+                text-decoration: none ;
+                color: rgb(196, 223, 154);
+            }
+            a:hover {color: pink;}
+            </STyle>
+    </head>
+    <body>
+        <table border   style="width: 100%;">
+            <tr style="height: 70px;">
+                <td colspan="3" style="text-align: center;">
+                    <a href="index.html">Home</a>
+                    <a href="cv.html">cv</a>
+                    <a href="join project.html">join projek</a>
+                    <a href="gallery.html">Gallery</a>
+                </td>
+            </tr>
+            <tr style="height: 150px;">
+                <td style="width: 17%;">
+                <td style="padding: 30px 50px;width: 50%;text-align: center;" >
+                    regisrasi untuk join
+                <form action="proses php.php" method="POST">
+                <label >Nama</label>
+                <input type="text" name="Nama" required>
+                <br>
+                <label >Email</label>
+                <input type="email" name="Email" >
+                <br>
+                <label>jenis kelamin</label>
+                <input type="radio" name="jk" value="LakiLaki" checked>Laki-laki
+                <input type="radio" name="jk" value="Perempuan">Perempuan
+                <br>
+                <label>Tool yang dikuasai</label>
+                <input type="checkbox" name="phpnative" value="phpnative">phpnative
+                <input type="checkbox" name="CI" value="CI">CI
+                <input type="checkbox" name="Laravel" value="Laravel">Laravel
+                <input type="checkbox" name="NodeJS" value="NodeJS">NodeJS
+                <br>
+                <input type="submit">
+                
+            </form>   
+                <td style="width: 20%;"></td>    
+        </table>
+    </body>
